@@ -1,0 +1,15 @@
+G:\Product_App_v1\Business\bin\Debug\Business.dll.config
+G:\Product_App_v1\Business\bin\Debug\Business.dll
+G:\Product_App_v1\Business\bin\Debug\Business.pdb
+G:\Product_App_v1\Business\bin\Debug\Data.dll
+G:\Product_App_v1\Business\bin\Debug\EntityFramework.dll
+G:\Product_App_v1\Business\bin\Debug\EntityFramework.SqlServer.dll
+G:\Product_App_v1\Business\bin\Debug\Data.pdb
+G:\Product_App_v1\Business\bin\Debug\Data.dll.config
+G:\Product_App_v1\Business\bin\Debug\EntityFramework.xml
+G:\Product_App_v1\Business\bin\Debug\EntityFramework.SqlServer.xml
+G:\Product_App_v1\Business\obj\Debug\Business.csprojAssemblyReference.cache
+G:\Product_App_v1\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+G:\Product_App_v1\Business\obj\Debug\Business.csproj.CopyComplete
+G:\Product_App_v1\Business\obj\Debug\Business.dll
+G:\Product_App_v1\Business\obj\Debug\Business.pdb
