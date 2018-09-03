@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product Index</h2>
+
+<body ng-app="app" class="container">
+    <div ng-controller="product_controller">
+        <table class="table" ng-init="initData()">
+            <tr ng-repeat="r in data">
+                <td>{{ r.Name }}</td>
+                <td>{{ r.Code }}</td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+
+
+<script src="scripts/angular.min.js"></script>
+  <script src="scripts/angular.js"></script>
+<script src="scripts/angular-mock.js"></script>
+
+<script src="@Url.Content("~/Views/App/app.js")"></script>
+<script src="@Url.Content("~/Views/App/product_controller.js")"></script>
+
+
+

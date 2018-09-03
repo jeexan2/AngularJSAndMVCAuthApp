@@ -18,10 +18,13 @@ namespace Product_App_v1
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //UnityConfig.RegisterComponents();
 
             Bootstrapper.Init();
-            HomeController initiator = DependencyInjector.Retrieve<HomeController>();
-            //IBusiness business = DependencyInjector.Retrieve<IBusiness>();
+           // GlobalConfiguration.Configuration.DependencyResolver =
+           // Bootstrapper.Init();
+           //  HomeController initiator = DependencyInjector.Retrieve<HomeController>(new BusinessClass());
+           // IBusiness business = DependencyInjector.Retrieve<IBusiness>();
 
         }
     }

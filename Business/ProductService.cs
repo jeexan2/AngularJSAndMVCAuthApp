@@ -8,11 +8,15 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private ProductRepository productRepository;
         private Product product;
-
+        public ProductService()
+        {
+            productRepository = new ProductRepository();
+            product = new Product();
+        }
         public ProductService(ProductRepository _productRepository,Product _product)
         {
             this.productRepository = _productRepository;

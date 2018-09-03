@@ -11,9 +11,9 @@ namespace Product_App_v1.Controllers
     {
         // GET: Product
         private ProductService productService;
-        public ProductController(ProductService _productService)
+        public ProductController()
         {
-            this.productService = _productService;
+            this.productService = new ProductService();
         }
         public ActionResult Index()
         {
@@ -39,6 +39,9 @@ namespace Product_App_v1.Controllers
             productService.Update(ProductModelBuilder.productModeltoProduct(product));
             return View();
         }
-        
+        public JsonResult GetProductList()
+        {
+            return Json(productService.GetProductList());
+        }
     }
 }

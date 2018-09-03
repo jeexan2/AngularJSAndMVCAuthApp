@@ -1,22 +1,35 @@
 ﻿using Business;
+using Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 
 namespace Product_App_v1.Controllers
 {
     public class HomeController : Controller
     {
-        // BusinessClass _businessClass = new BusinessClass();
-        IBusiness businessClass;
-        public HomeController(IBusiness _businessClass){
-            businessClass = _businessClass;
+        // private IProductRepository productRepository;
+        private ProductService productService;
+        public HomeController(){
+            productService = new ProductService();
         }
         public ActionResult Index()
         {
-            return View();
+            ProductListModel model = new ProductListModel();
+             model.Products = productService.GetProductList().ToList();
+            return View(model);
+        }
+
+        
+         [Route("Home/ProductList")]
+        public JsonResult ProductList()
+        {
+            ProductListModel model = new ProductListModel();
+            model.Products = productService.GetProductList().ToList();
+            return Json(model,JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult About()

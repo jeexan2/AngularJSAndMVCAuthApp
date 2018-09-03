@@ -11,6 +11,12 @@ namespace Data.Repository
     public class ProductRepository : IProductRepository
     {
         private ProductUnitDatabaseEntities dbContext;
+
+        public ProductRepository()
+        {
+            dbContext = new ProductUnitDatabaseEntities();
+        }
+
         public ProductRepository(ProductUnitDatabaseEntities _dbContext)
         {
             this.dbContext = _dbContext;
