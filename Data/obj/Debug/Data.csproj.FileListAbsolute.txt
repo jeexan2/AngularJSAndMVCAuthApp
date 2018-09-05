@@ -5,7 +5,6 @@ G:\Product_App_v1\Data\bin\Debug\EntityFramework.dll
 G:\Product_App_v1\Data\bin\Debug\EntityFramework.SqlServer.dll
 G:\Product_App_v1\Data\bin\Debug\EntityFramework.xml
 G:\Product_App_v1\Data\bin\Debug\EntityFramework.SqlServer.xml
-G:\Product_App_v1\Data\obj\Debug\Data.csprojAssemblyReference.cache
 G:\Product_App_v1\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 G:\Product_App_v1\Data\obj\Debug\Data.csproj.CopyComplete
 G:\Product_App_v1\Data\obj\Debug\Data.dll

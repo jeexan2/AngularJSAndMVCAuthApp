@@ -25,6 +25,7 @@ namespace Product_App_v1.Controllers
 
         
          [Route("Home/ProductList")]
+         [AuthorizeRole(Role.Admin)]
         public JsonResult ProductList()
         {
             ProductListModel model = new ProductListModel();
